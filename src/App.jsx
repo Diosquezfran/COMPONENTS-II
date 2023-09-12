@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import PresentationCard from './components/PresentationCard'
 import InputFocus from './components/InputFocus'
 import Counter from './components/Counter'
+import ItemListContainer from './components/Items/ItemListContainer'
 
 const App = () => {
   const [show, setShow] = useState(true)
@@ -17,22 +18,23 @@ const App = () => {
   return (
     <div>
       {/* <------------- PROPS -------------> */}
-      <PresentationCard
+      {/* <PresentationCard
         name={data.name}
         age={data.age}
         details={data.details}
         hobbies={data.hobbies}
         saludar={() => alert(`Hola ${data.name}`)}
-      />
+      /> */}
       {/* <------------- USEREF -------------> */}
 
-      <InputFocus />
+      {/* <InputFocus /> */}
       {/* <------------- USEEFFECT -------------> */}
-      {
+      {/* {
         show &&
         <Counter />
       }
-      <button onClick={() => setShow(!show)}>Desmontar componente</button>
+      <button onClick={() => setShow(!show)}>Desmontar componente</button> */}
+      <ItemListContainer />
     </div>
   )
 }
