@@ -3,6 +3,7 @@ import PresentationCard from './components/PresentationCard'
 import InputFocus from './components/InputFocus'
 import Counter from './components/Counter'
 import ItemListContainer from './components/Items/ItemListContainer'
+import CharacterListContainer from './components/Characters/CharacterListContainer'
 
 const App = () => {
   const [show, setShow] = useState(true)
@@ -34,7 +35,8 @@ const App = () => {
         <Counter />
       }
       <button onClick={() => setShow(!show)}>Desmontar componente</button> */}
-      <ItemListContainer />
+      {/* <ItemListContainer /> */}
+      <CharacterListContainer />
     </div>
   )
 }
